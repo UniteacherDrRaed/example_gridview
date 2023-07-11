@@ -25,9 +25,34 @@ class _PageGridViewappState extends State<PageGridViewapp> {
           mainAxisSpacing: 6,
           crossAxisSpacing: 6),
           itemCount: 10, 
-        itemBuilder: itemBuilder),
-     
-     )
+        itemBuilder: ((context, index) => 
+        Container(
+          decoration:   BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                boxShadow: const [
+                  BoxShadow(
+                    offset: Offset(4, 4),
+                    color: Colors.blueGrey,
+                  )
+                ],
+            gradient: const LinearGradient(
+              begin: Alignment.bottomLeft,
+
+            colors: [
+              Colors.green,
+              Colors.blue,
+            ]
+         )
+        ) ,
+        
+        )
+        
+        ),
+
+        )
+      ),
+   
+       
     );
     
 
