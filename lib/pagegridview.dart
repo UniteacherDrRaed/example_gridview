@@ -12,9 +12,24 @@ class _PageGridViewappState extends State<PageGridViewapp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("names of some icons"),
+        title: const Text("names of some icons"),
         backgroundColor: Colors.blue,
       ),
+      body: Container(
+      padding:const  EdgeInsets.all(12),
+      margin: const  EdgeInsets.all(12),
+      color: Colors.white,
+      child: GridView.builder(
+        gridDelegate:const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 4,
+          mainAxisSpacing: 6,
+          crossAxisSpacing: 6),
+          itemCount: 10, 
+        itemBuilder: itemBuilder),
+     
+     )
     );
+    
+
   }
 }
