@@ -33,7 +33,11 @@ class _PageGridViewappState extends State<PageGridViewapp> {
           onTap: ()
           {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text(namesoficons[index].toString()))
+              SnackBar(
+                content: Text(namesoficons[index].toString()),
+                backgroundColor: Colors.blue,
+                duration:const Duration(seconds: 1),
+                )
             );
           },
           child: Container(
