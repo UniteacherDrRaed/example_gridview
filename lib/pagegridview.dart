@@ -1,3 +1,4 @@
+import 'package:example_gridviewapp/listicon.dart';
 import 'package:flutter/material.dart';
 
 class PageGridViewapp extends StatefulWidget {
@@ -24,7 +25,7 @@ class _PageGridViewappState extends State<PageGridViewapp> {
           crossAxisCount: 4,
           mainAxisSpacing: 6,
           crossAxisSpacing: 6),
-          itemCount: 10, 
+          itemCount: listicon.length, 
         itemBuilder: ((context, index) => 
         Container(
           decoration:   BoxDecoration(
@@ -44,7 +45,11 @@ class _PageGridViewappState extends State<PageGridViewapp> {
             ]
          )
         ) ,
-        
+        child: Column(
+          children: [
+           listicon[index], 
+          ],
+        ),
         )
         
         ),
