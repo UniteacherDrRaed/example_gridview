@@ -6,6 +6,6 @@ class WordClass{
   @override
   String toString()
   {
-    return "${_english_name}, ${_german_name},${_arabic_name}";
+    return "english: ${_english_name},german: ${_german_name},arabic: ${_arabic_name}";
   }
 }
